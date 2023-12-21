@@ -11,7 +11,11 @@ terraform {
 provider "azurerm" {
   features {}
 }
-
+# Create a resource group
+resource "azurerm_resource_group" "volvic-prod" {
+  name     = "volvic-prod01-Rg"
+  location = "sweden central"
+}
 
 # Create app service plan
 resource "azurerm_service_plan" "volvic-prod-plan" {
