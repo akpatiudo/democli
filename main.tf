@@ -13,12 +13,6 @@ provider "azurerm" {
 }
 
 
-# Create a resource group
-resource "azurerm_resource_group" "volvic-prod" {
-  name     = "volvic-prod-Rg"
-  location = "sweden central"
-}
-
 # Create app service plan
 resource "azurerm_service_plan" "volvic-prod-plan" {
   name                = "volvic-prod-Webappplan"
