@@ -1,7 +1,7 @@
 ### *Automating Infrastructure Deployment on Azure Cloud With Terraform and Azure Pipeline*
 The dynamism and evolving landscape of cloud computing has made organization to constantly seek ways to streamline and automate their infrastructure deployment process. Azure cloud with its robust set of services, provides environment for such endeavours. One powerful combination that has gained popularity is the use of Terraform for infrastructure as code (IaC) and Azure Pipeline for continuous integration and delivery (CI/CD).
 
-## *What are Infrastructures?*
+## *What are Infrastructure?*
 Infrastructures simply put are resources on which application runs on
 
 ## *Terraform as the Foundation*
@@ -9,6 +9,12 @@ Terraform, an open-source IaC tool, allows organizations to define and provision
 
 ## *Azure Pipeline for Seamless CI/CD*
 Azure Pipeline complements Terraform by providing a robust CI/CD platform. It seamlessly integrates with version control systems, such as Git, enabling automatic triggering of pipelines upon code changes. With Azure Pipeline, organizations can define and automate their deployment workflows, including testing, approval gates, and release to production. This approach significantly reduces the manual intervention required in the deployment process, enhancing efficiency and reliability.
+
+## *When to use laC
+You use a large amount of laaS resources. Your infrastructure is rented from many different providers or platforms.
+You need to make regular adjustments to your infrastructure.
+You need proper documentation of changes made to your infrastructure.
+You want to optimize collaboration between administrators and developers
 
 ## *Prerequisites*
 
@@ -22,15 +28,15 @@ You’ll need to install the Terraform extension from the Visual Studio Marketpl
 
 The infrastructure to be configured and deployed are in block of codes in *Terraform configuration file (main.tf)* these block of codes describing the infrastructure resources you want to provision. This file will be stored in your source control repository. in this project I stored it in github and named it demoCLI and you can take a look at it in the main.tf file.
 
-## *Steps I Took to Automate and Deploy My Infrastructures*
+## *Steps I Took to Automate and Deploy My Infrastructure*
 
 1) I created a project on Azure DevOps, click on pipline and click on create new piplines.
 ![image](https://github.com/akpatiudo/democli/assets/118566096/1cba5480-a29f-42db-bab5-6110a7175af7)
 
-2) I chosed the Classic Editor to set the configuration of my source code. my main.tf file was in my github repository
+2) I chose the Classic Editor to set the configuration of my source code. my main.tf file was in my github repository
 ![image](https://github.com/akpatiudo/democli/assets/118566096/74a21aa9-5926-4a6a-8407-d00d9e0b9d98)
 
-3) The three basic terraform command was initatied, however it should be noted that will have to install the varsion of tearraform that we desire, pecture 3b captured all this processes.
+3) The three basic terraform command was initatied, however it should be noted that you have to install the varsion of tearraform that you desire, pecture 3b captured all this processes.
 
 Terraform: Install: This task installs the specified version of Terraform on the build agent
 
