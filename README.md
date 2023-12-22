@@ -50,7 +50,7 @@ Terraform: Apply: This task applies the changes to your infrastructure based on 
 ## Terraform version
 ![image](https://github.com/akpatiudo/democli/assets/118566096/5c970e62-557d-4b3e-9186-d2b2aac8bd17)
 
-## Plan: three to add below
+## Plan: three resouces to add below
 ![image](https://github.com/akpatiudo/democli/assets/118566096/cd581ccb-bae5-4d73-9db1-ddb3f4b210ff)
 
 ## apply
