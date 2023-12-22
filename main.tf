@@ -1,9 +1,16 @@
 terraform {
   required_providers {
     azurerm = {
-      source = "hashicorp/azurerm"
+      source  = "hashicorp/azurerm"
       version = "3.85.0"
     }
+  }
+
+  backend "azurerm" {
+    storage_account_name = "storage012e"
+    container_name       = "terraformcontainer"
+    key                  = "terraform.tfstate"
+    access_key           = "+7ZLlwJapGbafBiRL/vb7H65yIz1HsnyoOEZXbQ1O6MMBB/C2lspUVpm2Abh1NoQHtFKcBDlQmtj+AStE6hedQ=="
   }
 }
 
@@ -11,9 +18,10 @@ terraform {
 provider "azurerm" {
   features {}
 }
+
 # Create a resource group
 resource "azurerm_resource_group" "volvic-prod" {
-  name     = "volvic-prod01-Rg"
+  name     = "volvic-prod-Rg02"
   location = "sweden central"
 }
 
@@ -24,7 +32,6 @@ resource "azurerm_service_plan" "volvic-prod-plan" {
   location            = azurerm_resource_group.volvic-prod.location
   os_type             = "Linux"
   sku_name            = "P1v2"
-
 }
 
 # Create web app
