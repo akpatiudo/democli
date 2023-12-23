@@ -80,7 +80,7 @@ There is a block of code in the main.tf files that houses the backend that will 
 ![image](https://github.com/akpatiudo/democli/assets/118566096/70ab0b48-c54c-4709-bea8-0b0b7bd8ff6d)
 
 ## File in Backend
-![image](https://github.com/akpatiudo/democli/assets/118566096/61c08bcc-fb12-4144-aaab-5662003632ba)
+![image](https://github.com/akpatiudo/democli/assets/118566096/d41e1c9c-16d5-41e1-992c-3ac2d977f664)
 
 ## *Conclusion*
 
